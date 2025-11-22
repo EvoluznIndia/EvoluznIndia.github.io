@@ -213,6 +213,54 @@
                  text-align: justify !important;
             }
         }
+
+ .big-img {
+    /* height: 100%; */
+    width: auto;
+    /* object-fit: contain; */
+   
+}
+
+/* Tablet screens (max-width 992px) */
+@media (max-width: 992px) {
+    .big-img {
+        height: 500px;   /* smaller */
+        margin-top: 0;
+    }
+}
+
+/* Mobile screens (max-width 576px) */
+@media (max-width: 576px) {
+    .big-img {
+        height: 420px;   /* more small */
+        margin-top: -30px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1600px) {
+    .big-img {
+        padding: 50px;
+    }
+}
+@media (min-width: 1601px) {
+    .big-img {
+        padding: 30px;
+    }
+}
+
+.wide-btn {
+    width: 180px;     /* increase if you want bigger */
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.landing-btn {
+    /* margin-top: 50px; */
+    background-color: #2B4DBF !important;
+    border-color: #2B4DBF !important;
+    color: #fff !important;
+}
+
     </style>
 
 
@@ -299,10 +347,31 @@
             </div> 
 
             <!-- IMAGE COLUMN -->
-            <div
-                class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center pt-5 order-1 order-md-2 mb-5">
-                <img src="../static/img/landing_page/generated-image (14) (1).png" class="img-fluid" loading="lazy" style="max-width: 80%;" >
-            </div>
+<div class="col-lg-6 col-md-12 p-2 order-1 order-md-2 mb-5">
+
+    <!-- Row 1: Big Image -->
+    <div class="text-center mb-4">
+        <img src="./static/img/landing_page/generated-image (14) (1).png" 
+             class="img-fluid big-img"
+             loading="lazy">
+    </div>
+
+    <!-- Row 2 -->
+    <div class="d-flex justify-content-center mb-3 gap-3">
+        <a href="Power Management Solution.html" class="btn landing-btn wide-btn">Power Management</a>
+        <a href="machine_data_digitization_solutions.html" class="btn landing-btn wide-btn">Machine Data Digitization</a>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="d-flex justify-content-center gap-3">
+        <a href="Intelligent Lighting Management Solution (ILMS).html" class="btn landing-btn wide-btn">Lighting Management</a>
+        <a href="automated_cleanroom_solutions.html" class="btn landing-btn wide-btn">Automated Cleanrooms</a>
+    </div>
+
+</div>
+
+
+
 
         </div>
 </div>
